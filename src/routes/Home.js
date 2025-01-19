@@ -12,7 +12,7 @@ function Home() {
       setLoading(false);
     };
     useEffect(() => {
-    getMovies();
+        getMovies();
     },[]); 
     return <div className={styles.container}>
     {loading ? <div className={styles.loader}><span>Loading...</span></div> : <div className={styles.movies}>
